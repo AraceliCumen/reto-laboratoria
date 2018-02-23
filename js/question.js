@@ -74,7 +74,7 @@ $(document).ready(function() {
       widget.onUploadComplete(function(info) {
         //var preguntas = localStorage.getItem('oajala')
         var pregunta = 'preguntas';
-        var urlVideo = info.cdnUrl + 'nth/0';
+        var urlVideo = info.cdnUrl + 'record.webm';
         firebase.database().ref('users').child(user.uid).child('post').push({
           pregunta: pregunta,
           url: urlVideo
