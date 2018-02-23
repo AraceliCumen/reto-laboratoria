@@ -193,7 +193,7 @@ nextQuestion.addEventListener('click', function () {
   counter.textContent = 'tiempo estimado ' + chosenQuestions[centinel].time;
   displayQuestion.textContent = chosenQuestions[centinel].question;
   localStorage.setItem('oajala',chosenQuestions[centinel].question ); 
-  var template2 = `<input  id="input" type="hidden" role="uploadcare-uploader" name="content" data-crop="disabled" data-multiple="true"/>`;
+  var template2 = `<input  id="input" type="hidden" role="uploadcare-uploader" name="content" data-crop="disabled" data-multiple="false"/>`;
   $('.fake').append(template2);
   if (centinel === 7) {
     nextQuestion.addEventListener('click', function () {
